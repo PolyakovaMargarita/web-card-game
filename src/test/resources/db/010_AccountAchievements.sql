@@ -1,4 +1,4 @@
-INSERT INTO `Resource_Set`
+INSERT INTO `Account_Achievement`
     (`account_id`, `achievement_id`, `amount`)
 VALUES
     (1, 1, 20),

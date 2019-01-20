@@ -13,12 +13,11 @@ import java.util.List;
 public class AccountAchievementDaoImpl implements AccountAchievementDao {
 
     private static final String GET_ACCOUNT_ACHIEVEMENT_LIST = "SELECT * FROM Account_Achievement WHERE account_id = ?";
-    private static final String ADD_ACHIEVEMETN_TO_ACCOUNT = "";
 
-        @Override
+    @Override
     public List<AccountAchievementEntity> getUserAchievementsList(Integer accountId) {
         return SqlHelper.prepareStatement(GET_ACCOUNT_ACHIEVEMENT_LIST, query -> {
-            query.setInt(1,accountId);
+            query.setInt(1, accountId);
             ResultSet resultSet = query.executeQuery();
             List<AccountAchievementEntity> result = new LinkedList<>();
             while (resultSet.next()) {
@@ -31,9 +30,5 @@ public class AccountAchievementDaoImpl implements AccountAchievementDao {
             }
             return result;
         });
-    }
-
-    public List<AccountAchievementEntity> addAchievementToAccount(Integer accountId){
-        return null;
     }
 }

@@ -6,5 +6,4 @@ import java.util.List;
 
 public interface AccountAchievementDao {
     List<AccountAchievementEntity> getUserAchievementsList(Integer accountId);
-    List<AccountAchievementEntity> addAchievementToAccount(Integer accountId);
 }
