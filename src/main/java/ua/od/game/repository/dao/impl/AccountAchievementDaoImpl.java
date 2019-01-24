@@ -1,11 +1,9 @@
 package ua.od.game.repository.dao.impl;
 
-import ua.od.game.dto.AccountAchievementDto;
 import ua.od.game.model.AccountAchievementEntity;
 import ua.od.game.repository.dao.AccountAchievementDao;
 import ua.od.game.repository.helper.SqlHelper;
 
-import javax.management.Query;
 import java.sql.ResultSet;
 import java.util.LinkedList;
 import java.util.List;

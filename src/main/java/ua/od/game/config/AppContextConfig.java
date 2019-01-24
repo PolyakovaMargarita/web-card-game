@@ -16,6 +16,15 @@ import ua.od.game.service.RoomService;
 import ua.od.game.service.UserService;
 import ua.od.game.service.impl.AccountAchievementServiceImpl;
 import ua.od.game.service.impl.AchievementServiceImpl;
+
+import ua.od.game.controller.AccountAchievementController;
+import ua.od.game.controller.AccountRoomController;
+import ua.od.game.controller.RoomController;
+import ua.od.game.controller.UserController;
+import ua.od.game.controller.impl.AccountAchievementControllerImpl;
+import ua.od.game.controller.impl.AccountRoomControllerImpl;
+import ua.od.game.controller.impl.RoomControllerImpl;
+import ua.od.game.controller.impl.UserControllerImpl;
 import ua.od.game.service.impl.RoomServiceImpl;
 import ua.od.game.service.impl.UserServiceImpl;
 
@@ -109,6 +118,7 @@ public class AppContextConfig {
                     bindAsContract(AchievementDaoImpl.class).to(AchievementDao.class);
                     bindAsContract(AchievementServiceImpl.class).to(AchievementService.class);
                     bindAsContract(AchievementControllerImpl.class).to(AchievementController.class);
+
                 }
             });
         }};
