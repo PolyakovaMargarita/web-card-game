@@ -2,6 +2,7 @@ package ua.od.game.config;
 
 import ua.od.game.controller.*;
 import ua.od.game.controller.impl.*;
+
 import ua.od.game.repository.dao.AccountAchievementDao;
 import ua.od.game.repository.dao.AchievementDao;
 import ua.od.game.repository.dao.RoomDao;
@@ -17,6 +18,12 @@ import ua.od.game.service.UserService;
 import ua.od.game.service.impl.AccountAchievementServiceImpl;
 import ua.od.game.service.impl.AchievementServiceImpl;
 
+import ua.od.game.repository.dao.*;
+import ua.od.game.repository.dao.impl.*;
+import ua.od.game.service.*;
+import ua.od.game.service.impl.*;
+
+
 import ua.od.game.controller.AccountAchievementController;
 import ua.od.game.controller.AccountRoomController;
 import ua.od.game.controller.RoomController;
@@ -25,8 +32,10 @@ import ua.od.game.controller.impl.AccountAchievementControllerImpl;
 import ua.od.game.controller.impl.AccountRoomControllerImpl;
 import ua.od.game.controller.impl.RoomControllerImpl;
 import ua.od.game.controller.impl.UserControllerImpl;
+
 import ua.od.game.service.impl.RoomServiceImpl;
 import ua.od.game.service.impl.UserServiceImpl;
+
 
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Request;
@@ -118,6 +127,14 @@ public class AppContextConfig {
                     bindAsContract(AchievementDaoImpl.class).to(AchievementDao.class);
                     bindAsContract(AchievementServiceImpl.class).to(AchievementService.class);
                     bindAsContract(AchievementControllerImpl.class).to(AchievementController.class);
+
+                    bindAsContract(ResourceDaoImpl.class).to(ResourceDao.class);
+                    bindAsContract(ResourceServiceImpl.class).to(ResourceService.class);
+                    bindAsContract(ResourceControllerImpl.class).to(ResourceController.class);
+
+                    bindAsContract(BuildingDaoImpl.class).to(BuildingDao.class);
+                    bindAsContract(BuildingServiceImpl.class).to(BuildingService.class);
+                    bindAsContract(BuildingControllerImpl.class).to(BuildingController.class);
 
                 }
             });
