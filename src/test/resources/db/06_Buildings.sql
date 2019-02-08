@@ -21,3 +21,27 @@ VALUES
     ('Chemical plant', 'Who would have thought that chemists are such generous and kind people!', 0, 18),
     ('Underground laboratory', 'The great minds of mankind have gathered here to cook something truly grand.', 0, 19),
     ('Business training on the bench near a porch', 'They will teach you how to use a fork, tell you how often you need to take a shower, and why people need toilets.', 0, 20);
+
+INSERT INTO `Building_Set`
+(`set_id`, `building_id`, `amount`)
+VALUES
+    (101, 1, 1),
+    (102, 2, 1),
+    (103, 3, 1),
+    (104, 4, 1),
+    (105, 5, 1),
+    (106, 6, 1),
+    (107, 7, 1),
+    (108, 8, 1),
+    (109, 9, 1),
+    (110, 10, 1),
+    (111, 11, 1),
+    (112, 12, 1),
+    (113, 13, 1),
+    (114, 14, 1),
+    (115, 15, 1),
+    (116, 16, 1),
+    (117, 17, 1),
+    (118, 18, 1),
+    (119, 19, 1),
+    (120, 20, 1);
