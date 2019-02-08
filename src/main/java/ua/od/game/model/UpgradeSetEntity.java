@@ -1,10 +1,12 @@
 package ua.od.game.model;
 
 public class UpgradeSetEntity {
+
    private Integer id;
    private Integer setId;
    private Integer upgradeId;
    private Float amount;
+
 
     public Integer getId() {
         return id;
