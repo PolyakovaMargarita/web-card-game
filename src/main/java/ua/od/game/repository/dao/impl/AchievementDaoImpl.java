@@ -93,7 +93,7 @@ public class AchievementDaoImpl implements AchievementDao {
     }
 
     @Override
-    public List<AchievementEntity> getAchievementUpdates() {
+    public List<AchievementEntity> getAchievementUpgrades() {
         return SqlHelper.prepareStatement(GET_ALL_UPGRADE_QUERY, query -> {
             ResultSet resultSet = query.executeQuery();
             List<UpgradeSetEntity> upgradeSetEntities = new LinkedList<>();

@@ -37,4 +37,22 @@ public class AchievementDaoImplTest extends DbTest {
             Assert.assertFalse(achievementResources.isEmpty());
         }
     }
+    @Test
+    public void getAchievementBuildingList(){
+        List<AchievementEntity> achievementBuildings = achievementDao.getAchievementBuildings();
+        for (int i = 0; i < achievementBuildings.size(); i++) {
+            System.out.println(achievementBuildings.get(i).getName() + " ");
+            System.out.println(achievementBuildings.get(i).getDescription() + " ");
+            System.out.println(achievementBuildings.get(i).getBuildingSetList() + " ");
+        }
+    }
+    @Test
+    public void getAchievementUpgradeList(){
+        List<AchievementEntity> achievementUpgrades = achievementDao.getAchievementUpgrades();
+        for (int i = 0; i < achievementUpgrades.size(); i++) {
+            System.out.println(achievementUpgrades.get(i).getName());
+            System.out.println(achievementUpgrades.get(i).getDescription());
+            System.out.println(achievementUpgrades.get(i).getUpgradeSetList());
+        }
+    }
 }

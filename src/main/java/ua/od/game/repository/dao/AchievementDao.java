@@ -9,5 +9,5 @@ public interface AchievementDao {
     List<AchievementEntity> getAllAchievementList();
     List<AchievementEntity> getAchievementResources();
     List<AchievementEntity> getAchievementBuildings();
-    List<AchievementEntity> getAchievementUpdates();
+    List<AchievementEntity> getAchievementUpgrades();
 }
